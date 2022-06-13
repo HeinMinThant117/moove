@@ -24,25 +24,26 @@
 
 {{> theme_moove/accessibilitybar }}
 
-<nav class="fixed-top navbar navbar-light navbar-expand moodle-has-zindex">
+<nav class="fixed-top d-flex align-items-center navbar navbar-light navbar-expand moodle-has-zindex">
     {{#hasdrawertoggle}}
-        <div data-region="drawer-toggle" class="d-inline-block mr-3 drawer-toggle">
+        <div data-region="drawer-toggle" class="d-inline-block drawer-toggle">
             <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="slicon-menu"></i><span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
         </div>
     {{/hasdrawertoggle}}
 
     <a href="{{{ config.wwwroot }}}" class="navbar-brand {{# output.get_logo }}has-logo{{/ output.get_logo }}
         {{^ output.get_logo }}
-            d-none d-sm-inline
+            d-sm-inline
         {{/ output.get_logo }}
             ">
         {{# output.get_logo }}
-            <span class="logo d-none d-sm-inline">
+            <span class="logo d-sm-inline">
                 <img src="{{output.get_logo}}" alt="{{sitename}}">
             </span>
+            <span class="site-name d-none d-sm-inline">{{{ sitename }}}</span>
         {{/ output.get_logo }}
         {{^ output.get_logo }}
-            <span class="site-name d-none d-md-inline">{{{ sitename }}}</span>
+            <span class="site-name d-none d-sm-inline">{{{ sitename }}}</span>
         {{/ output.get_logo }}
     </a>
 

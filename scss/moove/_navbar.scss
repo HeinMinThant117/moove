@@ -8,6 +8,7 @@ nav.navbar {
     right: 0;
     left: 0;
     z-index: 1030;
+    color: #fff;
 
     .drawer-toggle {
         height: 70px;
@@ -26,9 +27,13 @@ nav.navbar {
     .navbar-brand {
         margin-right: 0;
         padding: 0;
+        color: #fff;
 
         .logo img {
             max-height: 70px;
+            width: 2rem;
+            height: 2rem;
+            margin-bottom: 0.5rem;
         }
 
         .site-name {
@@ -227,7 +232,7 @@ nav.navbar {
             .popover-region-toggle {
                 width: 50px;
                 text-align: center;
-                color: $brand-primary;
+                color: #fff;
                 font-size: 19px;
                 line-height: $navbar-height;
                 padding: .2rem .8rem 0;
@@ -292,7 +297,7 @@ nav.navbar {
             }
 
             .nav-link {
-                color: $brand-primary;
+                color: #fff;
                 padding: .2rem .8rem 0 1.2rem;
 
                 .slicon-globe {
